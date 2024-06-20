@@ -44,39 +44,40 @@ int main()
                 row++
         }*/
 
-        ifstream file("test.txt");
+    //    ifstream file("test.txt");
 
-    if (!file.is_open()) {
-        O << "File not found" << E
-            return 1;
-        }
-    char txt[20];
-    int rah = 0;
-    string num;
-    bool end = false;
-    while (file) {
-        file.getline(txt, 20);
-        for (int i = 0; txt[i] != '\0'; i++) {
-            if (isdigit(txt[i])) {
-                num += txt[i];
-                cout << num << " ";
-                if (!end) {
-                    rah++;
-                    cout << rah << endl;
-                    end = true;
-                }
-                else end = false;
-            }
-            if (txt[i] == ' ') {
-                cout << num << endl;
-                rah++;
-                num = "";
-            }
-        }
-        /*for (char i:txt) {
-            if (txt[i] >= '0' && txt[i] <= '9') cout << txt[i] << endl;
-        }*/
-        cout << rah << "Amount of nums" << endl;
-        file.close();
-    }
+    //if (!file.is_open()) {
+    //    O << "File not found" << E
+    //        return 1;
+    //    }
+    //char txt[20];
+    //int rah = 0;
+    //string num;
+    //bool end = false;
+    //while (file) {
+    //    file.getline(txt, 20);
+    //    for (int i = 0; txt[i] != '\0'; i++) {
+    //        if (isdigit(txt[i])) {
+    //            num += txt[i];
+    //            cout << num << " ";
+    //            if (!end) {
+    //                rah++;
+    //                cout << rah << endl;
+    //                end = true;
+    //            }
+    //            else end = false;
+    //        }
+    //        if (txt[i] == ' ') {
+    //            cout << num << endl;
+    //            rah++;
+    //            num = "";
+    //        }
+    //    }
+    //    /*for (char i:txt) {
+    //        if (txt[i] >= '0' && txt[i] <= '9') cout << txt[i] << endl;
+    //    }*/
+    //    cout << rah << "Amount of nums" << endl;
+    //    file.close();
+    //}
+    // Error
 }
